@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Speed Racer</title>
+  <!-- Lib -->
+  <script src="./lib/p5.min.js"></script>
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="./js/Game.js"></script>
+  <script src="./js/Form.js"></script>
+  <script src="./js/Player.js"></script>
+
+  <!-- Firebase SDK CODE ADD BELOW -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+  <script>
+    // Configuração do Firebase do seu aplicativo da web
+    const firebaseConfig = {
+      apiKey: "AIzaSyBCnBfswy64lO_FsqQTg3RMOgeBRMgmYA8",
+      authDomain: "corrida-multiplayer-dbb91.firebaseapp.com",
+      databaseURL: "https://corrida-multiplayer-dbb91-default-rtdb.firebaseio.com",
+      projectId: "corrida-multiplayer-dbb91",
+      storageBucket: "corrida-multiplayer-dbb91.appspot.com",
+      messagingSenderId: "343882879896",
+      appId: "1:343882879896:web:5f58193f3362a6094051ed"
+    };
+    // Inicializar Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+</head>
+
+<body>
+
+  <script src="./sketch.js"></script>
+</body>
+
+</html>
